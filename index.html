@@ -65,7 +65,10 @@
               See the work
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
-            <a class="btn btn--tonal btn--lg" href="mailto:chahatmbaghele@gmail.com">chahatmbaghele@gmail.com</a>
+            <a class="btn btn--tonal btn--lg" href="/resume.pdf" target="_blank" rel="noopener">
+              Download résumé
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
           </div>
           <dl class="hero__stats reveal">
             <div><dt>100K+</dt><dd>daily users served</dd></div>
@@ -225,70 +228,11 @@
         <div class="section__head reveal">
           <span class="eyebrow">02 — Selected work</span>
           <h2>Things I've built</h2>
-          <p>Side projects where I get to pick the architecture.</p>
+          <p>Side projects where I get to pick the architecture. Tap <b>Preview</b> on any card to run through real screenshots inside a phone.</p>
         </div>
 
-        <div class="grid">
-          <article class="card card--lg reveal" style="--accent:#7cf6b4">
-            <div class="card__glow"></div>
-            <div class="card__top">
-              <span class="card__emoji">🚆</span>
-              <span class="card__kind">Android · Live</span>
-            </div>
-            <h3>VaCart</h3>
-            <p class="card__tag">Real-Time Train Vacancy Tracker</p>
-            <p class="card__body">Native Android app tracking train seat availability in real time. Jetpack Compose + Material 3 UI, MVVM with Kotlin Flow driving asynchronous data streams and efficient REST polling.</p>
-            <div class="card__tags"><span>Compose</span><span>Kotlin</span><span>Hilt</span><span>Flow</span><span>Coroutines</span><span>Retrofit</span></div>
-          </article>
+        <div class="grid" id="projectGrid"></div>
 
-          <article class="card reveal" style="--accent:#a99cff">
-            <div class="card__glow"></div>
-            <div class="card__top">
-              <span class="card__emoji">🖼️</span>
-              <span class="card__kind">Android</span>
-            </div>
-            <h3>CoWall</h3>
-            <p class="card__tag">Shared Lock Screen Wallpaper</p>
-            <p class="card__body">Real-time lock screen wallpaper syncing between users over Firebase Realtime Database &amp; Storage, on an event-driven architecture with Koin DI.</p>
-            <div class="card__tags"><span>Kotlin</span><span>Koin</span><span>Firebase</span></div>
-          </article>
-
-          <article class="card reveal" style="--accent:#ffb782">
-            <div class="card__glow"></div>
-            <div class="card__top">
-              <span class="card__emoji">🔐</span>
-              <span class="card__kind">Android</span>
-            </div>
-            <h3>Password Manager</h3>
-            <p class="card__tag">High-security local credential vault</p>
-            <p class="card__body">AES-encrypted local storage on Room, wrapped in modern Material 3 design with full dark mode support.</p>
-            <div class="card__tags"><span>Compose</span><span>Room</span><span>AES</span></div>
-          </article>
-
-          <article class="card reveal" style="--accent:#8ad8ff">
-            <div class="card__glow"></div>
-            <div class="card__top">
-              <span class="card__emoji">🔑</span>
-              <span class="card__kind">CLI · Systems</span>
-            </div>
-            <h3>AuthKey CLI</h3>
-            <p class="card__tag">API key generation &amp; rotation</p>
-            <p class="card__body">Secure command-line tool automating auth key generation and rotation, with encrypted local credential storage modelled on Android's Keystore.</p>
-            <div class="card__tags"><span>Go</span><span>Node.js</span><span>OAuth</span></div>
-          </article>
-
-          <article class="card reveal" style="--accent:#ff9ec7">
-            <div class="card__glow"></div>
-            <div class="card__top">
-              <span class="card__emoji">🧩</span>
-              <span class="card__kind">Extension</span>
-            </div>
-            <h3>Mozilla Browser Extension</h3>
-            <p class="card__tag">Intercept &amp; modify network requests</p>
-            <p class="card__body">Lightweight WebExtension using background scripts and message passing for state management — the same background-processing fundamentals Android runs on.</p>
-            <div class="card__tags"><span>JavaScript</span><span>WebExtensions</span><span>DOM</span></div>
-          </article>
-        </div>
       </section>
 
       <!-- ── STACK ───────────────────────────────────── -->
@@ -367,9 +311,10 @@
             <div class="about__links">
               <a class="btn btn--tonal" href="mailto:chahatmbaghele@gmail.com">✉ Email</a>
               <a class="btn btn--tonal" href="tel:+919168282534">☎ +91 91682 82534</a>
-              <a class="btn btn--tonal" href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
-              <a class="btn btn--tonal" href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
-              <a class="btn btn--tonal" href="https://leetcode.com/" target="_blank" rel="noopener">LeetCode ↗</a>
+              <a class="btn btn--tonal" href="https://github.com/CHAHATMB" target="_blank" rel="noopener">GitHub ↗</a>
+              <a class="btn btn--tonal" href="https://www.linkedin.com/in/chahatmb" target="_blank" rel="noopener">LinkedIn ↗</a>
+              <a class="btn btn--tonal" href="https://leetcode.com/u/CHAHATMB/" target="_blank" rel="noopener">LeetCode ↗</a>
+              <a class="btn btn--tonal" href="/resume.pdf" target="_blank" rel="noopener">⤓ Résumé (PDF)</a>
             </div>
           </div>
 
@@ -409,9 +354,60 @@
 
       <footer class="footer">
         <p>© <span id="year">2026</span> Chahat Baghele · Bengaluru, India</p>
-        <p>Built with Kotlin-brain energy.</p>
+        <div class="footer__links">
+          <a href="https://github.com/CHAHATMB" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/chahatmb" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://leetcode.com/u/CHAHATMB/" target="_blank" rel="noopener">LeetCode</a>
+          <a href="mailto:chahatmbaghele@gmail.com">Email</a>
+        </div>
       </footer>
     </main>
+
+    <!-- ── APP PREVIEW MODAL ─────────────────────────── -->
+    <div class="modal" id="previewModal" role="dialog" aria-modal="true" aria-labelledby="pvTitle" hidden>
+      <div class="modal__scrim" data-close></div>
+      <div class="modal__panel" role="document">
+        <button class="modal__close" data-close aria-label="Close preview">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+
+        <div class="pv">
+          <div class="pv__stage">
+            <button class="pv__arrow pv__arrow--prev" id="pvPrev" aria-label="Previous screenshot">
+              <svg viewBox="0 0 24 24"><path d="M15 5 8 12l7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+
+            <div class="pv__device" id="pvDevice">
+              <div class="pv__frame">
+                <div class="pv__notch"></div>
+                <div class="pv__screen" id="pvScreen">
+                  <img id="pvImg" alt="" />
+                  <pre id="pvTerm" class="pv__term" hidden></pre>
+                  <div class="pv__loader" id="pvLoader"></div>
+                </div>
+              </div>
+            </div>
+
+            <button class="pv__arrow pv__arrow--next" id="pvNext" aria-label="Next screenshot">
+              <svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+
+            <div class="pv__caption"><span id="pvCaption"></span></div>
+            <div class="pv__dots" id="pvDots"></div>
+          </div>
+
+          <div class="pv__info">
+            <span class="card__kind" id="pvKind">Android</span>
+            <h3 id="pvTitle">Project</h3>
+            <p class="card__tag" id="pvTagline"></p>
+            <p class="pv__body" id="pvBody"></p>
+            <ul class="pv__features" id="pvFeatures"></ul>
+            <div class="card__tags" id="pvTags"></div>
+            <div class="pv__actions" id="pvActions"></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script type="module" src="/src/main.js"></script>
   </body>

@@ -12,5 +12,8 @@
   "type": "commonjs",
   "devDependencies": {
     "vite": "^8.3.1"
+  },
+  "dependencies": {
+    "agy": "^0.0.0"
   }
 }
