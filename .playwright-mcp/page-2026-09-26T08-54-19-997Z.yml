@@ -1,0 +1,353 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "chahat.dev" [ref=e3] [cursor=pointer]:
+      - /url: "#top"
+    - navigation [ref=e8]:
+      - link "Work" [ref=e9] [cursor=pointer]:
+        - /url: "#work"
+      - link "Projects" [ref=e10] [cursor=pointer]:
+        - /url: "#projects"
+      - link "Stack" [ref=e11] [cursor=pointer]:
+        - /url: "#stack"
+      - link "About" [ref=e12] [cursor=pointer]:
+        - /url: "#about"
+    - generic [ref=e13]:
+      - button "Toggle theme" [ref=e14] [cursor=pointer]
+      - link "Let's talk" [ref=e17] [cursor=pointer]:
+        - /url: mailto:chahatmbaghele@gmail.com
+  - main [ref=e20]:
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - generic [ref=e23]: Open to Android roles
+        - heading "I build Android apps people trust with their money." [level=1] [ref=e25]:
+          - generic [ref=e26]: I build Android
+          - generic [ref=e27]: apps people trust
+          - generic [ref=e28]: with their money.
+        - paragraph [ref=e29]:
+          - text: Software Engineer at
+          - strong [ref=e30]: ServiceNow
+          - text: . Previously shipped core modules of
+          - strong [ref=e31]: Wells Fargo Mobile Deposit
+          - text: —
+          - strong [ref=e32]: 100K+
+          - text: daily users. Native Android with Kotlin & Jetpack Compose, backed by real microservices experience.
+        - generic [ref=e33]:
+          - link "See the work" [ref=e34] [cursor=pointer]:
+            - /url: "#projects"
+          - link "chahatmbaghele@gmail.com" [ref=e37] [cursor=pointer]:
+            - /url: mailto:chahatmbaghele@gmail.com
+        - generic [ref=e38]:
+          - generic [ref=e39]:
+            - term [ref=e40]: 100K+
+            - definition [ref=e41]: daily users served
+          - generic [ref=e42]:
+            - term [ref=e43]: 3+ yrs
+            - definition [ref=e44]: shipping production
+          - generic [ref=e45]:
+            - term [ref=e46]: "8.98"
+            - definition [ref=e47]: CGPA · VJTI
+      - generic [ref=e48]:
+        - generic [ref=e53]:
+          - generic [ref=e54]: 8:54 AM
+          - generic [ref=e63]:
+            - generic [ref=e64]:
+              - generic [ref=e65]:
+                - paragraph [ref=e66]: Good evening
+                - heading "Chahat" [level=3] [ref=e67]
+              - generic [ref=e68]: CB
+            - generic [ref=e69]:
+              - paragraph [ref=e70]: Currently building
+              - paragraph [ref=e71]: AI Control Tower
+              - paragraph [ref=e72]: ServiceNow · Value tracking
+            - paragraph [ref=e75]: Recent builds
+            - generic [ref=e76]:
+              - generic [ref=e77]:
+                - generic [ref=e78]: 🚆
+                - generic [ref=e79]:
+                  - generic [ref=e80]: VaCart
+                  - generic [ref=e81]: Compose · Flow · Hilt
+                - generic [ref=e82]: Live
+              - generic [ref=e83]:
+                - generic [ref=e84]: 🖼️
+                - generic [ref=e85]:
+                  - generic [ref=e86]: CoWall
+                  - generic [ref=e87]: Kotlin · Firebase · Koin
+                - generic [ref=e88]: Live
+              - generic [ref=e89]:
+                - generic [ref=e90]: 🔐
+                - generic [ref=e91]:
+                  - generic [ref=e92]: Password Manager
+                  - generic [ref=e93]: Room · AES · M3
+                - generic [ref=e94]: Live
+          - generic [ref=e98]:
+            - generic [ref=e99]: Home
+            - generic [ref=e102]: Work
+            - generic [ref=e105]: About
+        - paragraph [ref=e108]: Tilt me →
+    - generic [ref=e110]:
+      - generic [ref=e111]: Kotlin
+      - generic [ref=e112]: ◆
+      - generic [ref=e113]: Jetpack Compose
+      - generic [ref=e114]: ◆
+      - generic [ref=e115]: MVVM
+      - generic [ref=e116]: ◆
+      - generic [ref=e117]: Coroutines
+      - generic [ref=e118]: ◆
+      - generic [ref=e119]: Flow
+      - generic [ref=e120]: ◆
+      - generic [ref=e121]: Hilt
+      - generic [ref=e122]: ◆
+      - generic [ref=e123]: Room
+      - generic [ref=e124]: ◆
+      - generic [ref=e125]: Retrofit
+      - generic [ref=e126]: ◆
+      - generic [ref=e127]: Material 3
+      - generic [ref=e128]: ◆
+      - generic [ref=e129]: Clean Architecture
+      - generic [ref=e130]: ◆
+      - generic [ref=e131]: Kotlin
+      - generic [ref=e132]: ◆
+      - generic [ref=e133]: Jetpack Compose
+      - generic [ref=e134]: ◆
+      - generic [ref=e135]: MVVM
+      - generic [ref=e136]: ◆
+      - generic [ref=e137]: Coroutines
+      - generic [ref=e138]: ◆
+      - generic [ref=e139]: Flow
+      - generic [ref=e140]: ◆
+      - generic [ref=e141]: Hilt
+      - generic [ref=e142]: ◆
+      - generic [ref=e143]: Room
+      - generic [ref=e144]: ◆
+      - generic [ref=e145]: Retrofit
+      - generic [ref=e146]: ◆
+      - generic [ref=e147]: Material 3
+      - generic [ref=e148]: ◆
+      - generic [ref=e149]: Clean Architecture
+      - generic [ref=e150]: ◆
+    - generic [ref=e151]:
+      - generic [ref=e152]:
+        - generic [ref=e153]: 01 — Experience
+        - heading "Where I've shipped" [level=2] [ref=e154]
+        - paragraph [ref=e155]: Three years across enterprise mobile, financial products, and platform backend.
+      - list [ref=e156]:
+        - listitem [ref=e157]:
+          - generic [ref=e159]:
+            - generic [ref=e160]:
+              - generic [ref=e161]:
+                - heading "Software Engineer · IC2" [level=3] [ref=e162]
+                - paragraph [ref=e163]: ServiceNow · Hyderabad, India
+              - generic [ref=e164]: Jun 2025 — Present
+            - generic [ref=e165]: 🏆 ServiceNow LAMA Award — Q2 2026
+            - list [ref=e166]:
+              - listitem [ref=e167]: Engineered Server-Driven UI backend APIs for the ServiceNow Mobile App — role-based component rendering driven by auth payloads.
+              - listitem [ref=e168]: Architected core value-tracking modules in the AI Control Tower, letting enterprises govern and quantify ROI from AI agents.
+              - listitem [ref=e169]: Built responsive dashboards (Lit JS, Tailwind) plus backend microservices computing real-time usage analytics.
+              - listitem [ref=e170]: Optimized queries, schemas and scheduled jobs — cutting API latency and payload overhead for mobile clients.
+            - generic [ref=e171]:
+              - generic [ref=e172]: SDUI
+              - generic [ref=e173]: Microservices
+              - generic [ref=e174]: Lit JS
+              - generic [ref=e175]: Tailwind
+              - generic [ref=e176]: SQL
+        - listitem [ref=e177]:
+          - generic [ref=e179]:
+            - generic [ref=e180]:
+              - generic [ref=e181]:
+                - heading "Software Engineer · Android" [level=3] [ref=e182]
+                - paragraph [ref=e183]: Wells Fargo · Bengaluru, India
+              - generic [ref=e184]: Jun 2024 — Jun 2025
+            - generic [ref=e185]: ⭐ "Exceeds" performance rating
+            - list [ref=e186]:
+              - listitem [ref=e187]: Engineered core modules for Mobile Deposit — used by 100K+ daily users for critical financial transactions.
+              - listitem [ref=e188]: Integrated the MiSnap SDK for check image capture with custom XML interfaces and complex Jetpack Navigation flows.
+              - listitem [ref=e189]: Architected features on MVVM with ViewModel state management, Retrofit, OkHttp and Dagger2.
+              - listitem [ref=e190]: Locked in stability with comprehensive unit tests in Mockk, Mockito and JUnit — zero regressions across release cycles.
+            - generic [ref=e191]:
+              - generic [ref=e192]: Kotlin
+              - generic [ref=e193]: MVVM
+              - generic [ref=e194]: Dagger2
+              - generic [ref=e195]: Retrofit
+              - generic [ref=e196]: Mockk
+        - listitem [ref=e197]:
+          - generic [ref=e199]:
+            - generic [ref=e200]:
+              - generic [ref=e201]:
+                - heading "Program Associate · Software Engineer" [level=3] [ref=e202]
+                - paragraph [ref=e203]: Wells Fargo · Bengaluru, India
+              - generic [ref=e204]: Jul 2023 — Jun 2024
+            - list [ref=e205]:
+              - listitem [ref=e206]: Designed an internal API interceptor to capture and modify traffic between mobile apps and backend servers.
+              - listitem [ref=e207]: Built a generic routing handler and dynamic middleware to fuzz API responses — adopted by 15+ scrum teams and 50+ QA testers.
+              - listitem [ref=e208]: Shipped a web configuration dashboard for real-time JSON response modification and mock generation.
+            - generic [ref=e209]:
+              - generic [ref=e210]: Node.js
+              - generic [ref=e211]: Express
+              - generic [ref=e212]: Tooling
+              - generic [ref=e213]: Dev Experience
+    - generic [ref=e214]:
+      - generic [ref=e215]:
+        - generic [ref=e216]: 02 — Selected work
+        - heading "Things I've built" [level=2] [ref=e217]
+        - paragraph [ref=e218]: Side projects where I get to pick the architecture.
+      - generic [ref=e219]:
+        - article [ref=e220]:
+          - generic [ref=e221]:
+            - generic [ref=e222]: 🚆
+            - generic [ref=e223]: Android · Live
+          - heading "VaCart" [level=3] [ref=e224]
+          - paragraph [ref=e225]: Real-Time Train Vacancy Tracker
+          - paragraph [ref=e226]: Native Android app tracking train seat availability in real time. Jetpack Compose + Material 3 UI, MVVM with Kotlin Flow driving asynchronous data streams and efficient REST polling.
+          - generic [ref=e227]:
+            - generic [ref=e228]: Compose
+            - generic [ref=e229]: Kotlin
+            - generic [ref=e230]: Hilt
+            - generic [ref=e231]: Flow
+            - generic [ref=e232]: Coroutines
+            - generic [ref=e233]: Retrofit
+        - article [ref=e234]:
+          - generic [ref=e235]:
+            - generic [ref=e236]: 🖼️
+            - generic [ref=e237]: Android
+          - heading "CoWall" [level=3] [ref=e238]
+          - paragraph [ref=e239]: Shared Lock Screen Wallpaper
+          - paragraph [ref=e240]: Real-time lock screen wallpaper syncing between users over Firebase Realtime Database & Storage, on an event-driven architecture with Koin DI.
+          - generic [ref=e241]:
+            - generic [ref=e242]: Kotlin
+            - generic [ref=e243]: Koin
+            - generic [ref=e244]: Firebase
+        - article [ref=e245]:
+          - generic [ref=e246]:
+            - generic [ref=e247]: 🔐
+            - generic [ref=e248]: Android
+          - heading "Password Manager" [level=3] [ref=e249]
+          - paragraph [ref=e250]: High-security local credential vault
+          - paragraph [ref=e251]: AES-encrypted local storage on Room, wrapped in modern Material 3 design with full dark mode support.
+          - generic [ref=e252]:
+            - generic [ref=e253]: Compose
+            - generic [ref=e254]: Room
+            - generic [ref=e255]: AES
+        - article [ref=e256]:
+          - generic [ref=e257]:
+            - generic [ref=e258]: 🔑
+            - generic [ref=e259]: CLI · Systems
+          - heading "AuthKey CLI" [level=3] [ref=e260]
+          - paragraph [ref=e261]: API key generation & rotation
+          - paragraph [ref=e262]: Secure command-line tool automating auth key generation and rotation, with encrypted local credential storage modelled on Android's Keystore.
+          - generic [ref=e263]:
+            - generic [ref=e264]: Go
+            - generic [ref=e265]: Node.js
+            - generic [ref=e266]: OAuth
+        - article [ref=e267]:
+          - generic [ref=e268]:
+            - generic [ref=e269]: 🧩
+            - generic [ref=e270]: Extension
+          - heading "Mozilla Browser Extension" [level=3] [ref=e271]
+          - paragraph [ref=e272]: Intercept & modify network requests
+          - paragraph [ref=e273]: Lightweight WebExtension using background scripts and message passing for state management — the same background-processing fundamentals Android runs on.
+          - generic [ref=e274]:
+            - generic [ref=e275]: JavaScript
+            - generic [ref=e276]: WebExtensions
+            - generic [ref=e277]: DOM
+    - generic [ref=e278]:
+      - generic [ref=e279]:
+        - generic [ref=e280]: 03 — Toolkit
+        - heading "The stack I reach for" [level=2] [ref=e281]
+      - generic [ref=e282]:
+        - generic [ref=e283]:
+          - generic [ref=e284]:
+            - heading "Android & Mobile" [level=4] [ref=e285]
+            - generic [ref=e287]:
+              - generic [ref=e288]: Kotlin
+              - generic [ref=e289]: Java
+              - generic [ref=e290]: Jetpack Compose
+              - generic [ref=e291]: Android SDK
+              - generic [ref=e292]: LiveData
+              - generic [ref=e293]: Retrofit
+              - generic [ref=e294]: Room
+              - generic [ref=e295]: Coroutines
+              - generic [ref=e296]: Flow
+              - generic [ref=e297]: Dagger2 / Hilt
+              - generic [ref=e298]: Mockk
+              - generic [ref=e299]: Mockito
+          - generic [ref=e300]:
+            - heading "Architecture" [level=4] [ref=e301]
+            - generic [ref=e303]:
+              - generic [ref=e304]: MVVM
+              - generic [ref=e305]: Clean Architecture
+              - generic [ref=e306]: SOLID
+              - generic [ref=e307]: Agile / Scrum
+              - generic [ref=e308]: UI/UX
+          - generic [ref=e309]:
+            - heading "Backend & Web" [level=4] [ref=e310]
+            - generic [ref=e312]:
+              - generic [ref=e313]: C / C++
+              - generic [ref=e314]: JavaScript
+              - generic [ref=e315]: Node.js
+              - generic [ref=e316]: Express
+              - generic [ref=e317]: RESTful APIs
+              - generic [ref=e318]: Microservices
+          - generic [ref=e319]:
+            - heading "Tools & Data" [level=4] [ref=e320]
+            - generic [ref=e322]:
+              - generic [ref=e323]: Android Studio
+              - generic [ref=e324]: Git
+              - generic [ref=e325]: Postman
+              - generic [ref=e326]: Jenkins
+              - generic [ref=e327]: Jira
+              - generic [ref=e328]: Firebase
+              - generic [ref=e329]: Claude Code
+              - generic [ref=e330]: Gemini
+              - generic [ref=e331]: SQL
+              - generic [ref=e332]: MongoDB
+        - generic [ref=e333]:
+          - generic [ref=e334]: Developer.kt
+          - code [ref=e341]: "@Composable fun Developer(modifier: Modifier = Modifier) { val focus by rememberSaveable { mutableStateOf(\"Native Android\") } Column( modifier = modifier.fillMaxSize(), verticalArrangement = Arrangement.spacedBy(16.dp) ) { Text(\"Chahat Baghele\", style = Display) Text(\"Bengaluru, India\") skills.forEach { skill -> AssistChip(onClick = ::ship, label = { Text(skill) }) } } }"
+    - generic [ref=e343]:
+      - generic [ref=e344]:
+        - generic [ref=e345]: 04 — About
+        - heading "Mobile engineer who speaks backend." [level=2] [ref=e346]: Mobile engineer whospeaks backend.
+        - paragraph [ref=e347]: I'm a Software Engineer specializing in native Android development, with a strong foundation in full-stack enterprise architecture. I've delivered mission-critical financial mobile products serving over 100K daily users using Jetpack Compose, Kotlin and MVVM.
+        - paragraph [ref=e348]: My time in backend microservices and API design at ServiceNow means I bridge frontend architectures with scalable backend infrastructure — so the mobile-backend seam is designed, not discovered in production.
+        - generic [ref=e349]:
+          - link "✉ Email" [ref=e350] [cursor=pointer]:
+            - /url: mailto:chahatmbaghele@gmail.com
+          - link "☎ +91 91682 82534" [ref=e351] [cursor=pointer]:
+            - /url: tel:+919168282534
+          - link "GitHub ↗" [ref=e352] [cursor=pointer]:
+            - /url: https://github.com/
+          - link "LinkedIn ↗" [ref=e353] [cursor=pointer]:
+            - /url: https://linkedin.com/
+          - link "LeetCode ↗" [ref=e354] [cursor=pointer]:
+            - /url: https://leetcode.com/
+      - complementary [ref=e355]:
+        - generic [ref=e356]:
+          - heading "Education" [level=4] [ref=e357]
+          - paragraph [ref=e358]: Veermata Jijabai Technological Institute
+          - paragraph [ref=e359]: B.Tech, Information Technology
+          - paragraph [ref=e360]: Mumbai, India · Jul 2019 — May 2023
+          - generic [ref=e361]: 8.98 / 10.0 CGPA
+        - generic [ref=e362]:
+          - heading "Honors" [level=4] [ref=e363]
+          - list [ref=e364]:
+            - listitem [ref=e365]:
+              - generic [ref=e366]: 🏆
+              - text: ServiceNow LAMA Award — Q2 2026
+            - listitem [ref=e367]:
+              - generic [ref=e368]: 🎨
+              - text: UI/UX Track Winner — HackFrost
+            - listitem [ref=e369]:
+              - generic [ref=e370]: 🥈
+              - text: Runner-Up — Centenary Hackathon
+            - listitem [ref=e371]:
+              - generic [ref=e372]: 🥈
+              - text: Runner-Up — Quasar Hackathon
+    - generic [ref=e374]:
+      - generic [ref=e375]: Available for new work
+      - heading "Got an Android app that deserves better?" [level=2] [ref=e377]: Got an Android appthat deserves better?
+      - paragraph [ref=e378]: Compose migrations, architecture cleanups, or a product from zero — let's get into it.
+      - link "chahatmbaghele@gmail.com" [ref=e379] [cursor=pointer]:
+        - /url: mailto:chahatmbaghele@gmail.com
+    - generic [ref=e382]:
+      - paragraph [ref=e383]: © 2026 Chahat Baghele · Bengaluru, India
+      - paragraph [ref=e384]: Built with Kotlin-brain energy.

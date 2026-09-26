@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Chahat Baghele — Android Engineer. Jetpack Compose, Kotlin, MVVM. Building mission-critical mobile products." />
+    <title>Chahat Baghele — Android Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:wght@400;500;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <div class="blob blob-a"></div>
+    <div class="blob blob-b"></div>
+    <div class="blob blob-c"></div>
+
+    <!-- ── NAV ───────────────────────────────────────── -->
+    <header class="nav" id="nav">
+      <a class="nav__brand" href="#top">
+        <span class="nav__logo">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18h12V8.4H6V18Zm-3.6-9.6a1.2 1.2 0 0 0-1.2 1.2v5a1.2 1.2 0 0 0 2.4 0v-5a1.2 1.2 0 0 0-1.2-1.2Zm19.2 0a1.2 1.2 0 0 0-1.2 1.2v5a1.2 1.2 0 0 0 2.4 0v-5a1.2 1.2 0 0 0-1.2-1.2ZM8.4 19v2.2a1.2 1.2 0 0 0 2.4 0V19H8.4Zm4.8 0v2.2a1.2 1.2 0 0 0 2.4 0V19h-2.4ZM15.5 3l1.1-1.7a.3.3 0 0 0-.5-.32L14.9 2.7a7.6 7.6 0 0 0-5.8 0L7.9.98a.3.3 0 0 0-.5.32L8.5 3A6 6 0 0 0 6 7.4h12A6 6 0 0 0 15.5 3ZM9.4 5.7a.62.62 0 1 1 0-1.25.62.62 0 0 1 0 1.25Zm5.2 0a.62.62 0 1 1 0-1.25.62.62 0 0 1 0 1.25Z"/></svg>
+        </span>
+        <span class="nav__name">chahat<span>.dev</span></span>
+      </a>
+      <nav class="nav__links">
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#stack">Stack</a>
+        <a href="#about">About</a>
+      </nav>
+      <div class="nav__right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-toggle__track"><span class="theme-toggle__thumb"></span></span>
+        </button>
+        <a class="btn btn--filled nav__cta" href="mailto:chahatmbaghele@gmail.com">
+          Let's talk
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- ── HERO ────────────────────────────────────── -->
+      <section class="hero">
+        <div class="hero__copy">
+          <div class="chip chip--live reveal">
+            <span class="pulse"></span> Open to Android roles
+          </div>
+          <h1 class="hero__title reveal">
+            <span class="line">I build Android</span>
+            <span class="line">apps people trust</span>
+            <span class="line line--accent">with their money.</span>
+          </h1>
+          <p class="hero__sub reveal">
+            Software Engineer at <strong>ServiceNow</strong>. Previously shipped core modules of
+            <strong>Wells Fargo Mobile Deposit</strong> — <strong>100K+</strong> daily users.
+            Native Android with Kotlin &amp; Jetpack Compose, backed by real
+            microservices experience.
+          </p>
+          <div class="hero__actions reveal">
+            <a class="btn btn--filled btn--lg" href="#projects">
+              See the work
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn btn--tonal btn--lg" href="mailto:chahatmbaghele@gmail.com">chahatmbaghele@gmail.com</a>
+          </div>
+          <dl class="hero__stats reveal">
+            <div><dt>100K+</dt><dd>daily users served</dd></div>
+            <div><dt>3+ yrs</dt><dd>shipping production</dd></div>
+            <div><dt>8.98</dt><dd>CGPA · VJTI</dd></div>
+          </dl>
+        </div>
+
+        <!-- Phone mockup -->
+        <div class="hero__device reveal">
+          <div class="device" id="device">
+            <div class="device__glow"></div>
+            <div class="device__frame">
+              <div class="device__notch"></div>
+              <div class="device__screen">
+                <div class="statusbar">
+                  <span id="clock">9:41</span>
+                  <span class="statusbar__icons">
+                    <svg viewBox="0 0 24 24"><path d="M2 20h3v-6H2v6Zm5.5 0h3V9h-3v11Zm5.5 0h3V4h-3v16Zm5.5 0h3v-9h-3v9Z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M12 21 1 7a17 17 0 0 1 22 0L12 21Z"/></svg>
+                    <svg viewBox="0 0 24 24"><path d="M16 5V3h-2v2H10V3H8v2H6v16h12V5h-2Z"/></svg>
+                  </span>
+                </div>
+                <div class="app">
+                  <div class="app__top">
+                    <div>
+                      <p class="app__hello">Good evening</p>
+                      <h3 class="app__title">Chahat</h3>
+                    </div>
+                    <div class="app__avatar">CB</div>
+                  </div>
+
+                  <div class="app__card app__card--hero">
+                    <p class="app__label">Currently building</p>
+                    <p class="app__value">AI Control Tower</p>
+                    <p class="app__meta">ServiceNow · Value tracking</p>
+                    <div class="app__bar"><i style="--w:86%"></i></div>
+                  </div>
+
+                  <p class="app__section">Recent builds</p>
+                  <div class="app__list">
+                    <div class="app__row">
+                      <span class="app__icon app__icon--a">🚆</span>
+                      <span class="app__rowtext"><b>VaCart</b><small>Compose · Flow · Hilt</small></span>
+                      <span class="app__badge">Live</span>
+                    </div>
+                    <div class="app__row">
+                      <span class="app__icon app__icon--b">🖼️</span>
+                      <span class="app__rowtext"><b>CoWall</b><small>Kotlin · Firebase · Koin</small></span>
+                      <span class="app__badge">Live</span>
+                    </div>
+                    <div class="app__row">
+                      <span class="app__icon app__icon--c">🔐</span>
+                      <span class="app__rowtext"><b>Password Manager</b><small>Room · AES · M3</small></span>
+                      <span class="app__badge">Live</span>
+                    </div>
+                  </div>
+
+                  <div class="app__fab">
+                    <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+                  </div>
+                </div>
+                <div class="navbar">
+                  <span class="navbar__item is-active"><svg viewBox="0 0 24 24"><path d="M12 3 2 12h3v9h6v-6h2v6h6v-9h3L12 3Z"/></svg>Home</span>
+                  <span class="navbar__item"><svg viewBox="0 0 24 24"><path d="M4 5h16v3H4V5Zm0 5.5h16v3H4v-3ZM4 16h10v3H4v-3Z"/></svg>Work</span>
+                  <span class="navbar__item"><svg viewBox="0 0 24 24"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm0 2c-4 0-8 2-8 4.5V21h16v-2.5C20 16 16 14 12 14Z"/></svg>About</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="device__hint">Tilt me →</p>
+        </div>
+      </section>
+
+      <!-- ── MARQUEE ─────────────────────────────────── -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Kotlin</span><i>◆</i><span>Jetpack Compose</span><i>◆</i><span>MVVM</span><i>◆</i><span>Coroutines</span><i>◆</i><span>Flow</span><i>◆</i><span>Hilt</span><i>◆</i><span>Room</span><i>◆</i><span>Retrofit</span><i>◆</i><span>Material 3</span><i>◆</i><span>Clean Architecture</span><i>◆</i>
+          <span>Kotlin</span><i>◆</i><span>Jetpack Compose</span><i>◆</i><span>MVVM</span><i>◆</i><span>Coroutines</span><i>◆</i><span>Flow</span><i>◆</i><span>Hilt</span><i>◆</i><span>Room</span><i>◆</i><span>Retrofit</span><i>◆</i><span>Material 3</span><i>◆</i><span>Clean Architecture</span><i>◆</i>
+        </div>
+      </div>
+
+      <!-- ── WORK ────────────────────────────────────── -->
+      <section class="section" id="work">
+        <div class="section__head reveal">
+          <span class="eyebrow">01 — Experience</span>
+          <h2>Where I've shipped</h2>
+          <p>Three years across enterprise mobile, financial products, and platform backend.</p>
+        </div>
+
+        <ol class="timeline">
+          <li class="tl reveal">
+            <div class="tl__dot"></div>
+            <div class="tl__card">
+              <div class="tl__head">
+                <div>
+                  <h3>Software Engineer · IC2</h3>
+                  <p class="tl__org">ServiceNow <span>· Hyderabad, India</span></p>
+                </div>
+                <span class="tl__date">Jun 2025 — Present</span>
+              </div>
+              <div class="tl__award">🏆 ServiceNow LAMA Award — Q2 2026</div>
+              <ul class="tl__points">
+                <li>Engineered <b>Server-Driven UI</b> backend APIs for the ServiceNow Mobile App — role-based component rendering driven by auth payloads.</li>
+                <li>Architected core value-tracking modules in the <b>AI Control Tower</b>, letting enterprises govern and quantify ROI from AI agents.</li>
+                <li>Built responsive dashboards (Lit JS, Tailwind) plus backend microservices computing real-time usage analytics.</li>
+                <li>Optimized queries, schemas and scheduled jobs — cutting API latency and payload overhead for mobile clients.</li>
+              </ul>
+              <div class="tl__tags"><span>SDUI</span><span>Microservices</span><span>Lit JS</span><span>Tailwind</span><span>SQL</span></div>
+            </div>
+          </li>
+
+          <li class="tl reveal">
+            <div class="tl__dot"></div>
+            <div class="tl__card">
+              <div class="tl__head">
+                <div>
+                  <h3>Software Engineer · Android</h3>
+                  <p class="tl__org">Wells Fargo <span>· Bengaluru, India</span></p>
+                </div>
+                <span class="tl__date">Jun 2024 — Jun 2025</span>
+              </div>
+              <div class="tl__award">⭐ "Exceeds" performance rating</div>
+              <ul class="tl__points">
+                <li>Engineered core modules for <b>Mobile Deposit</b> — used by <b>100K+ daily users</b> for critical financial transactions.</li>
+                <li>Integrated the <b>MiSnap SDK</b> for check image capture with custom XML interfaces and complex Jetpack Navigation flows.</li>
+                <li>Architected features on <b>MVVM</b> with ViewModel state management, Retrofit, OkHttp and Dagger2.</li>
+                <li>Locked in stability with comprehensive unit tests in Mockk, Mockito and JUnit — zero regressions across release cycles.</li>
+              </ul>
+              <div class="tl__tags"><span>Kotlin</span><span>MVVM</span><span>Dagger2</span><span>Retrofit</span><span>Mockk</span></div>
+            </div>
+          </li>
+
+          <li class="tl reveal">
+            <div class="tl__dot"></div>
+            <div class="tl__card">
+              <div class="tl__head">
+                <div>
+                  <h3>Program Associate · Software Engineer</h3>
+                  <p class="tl__org">Wells Fargo <span>· Bengaluru, India</span></p>
+                </div>
+                <span class="tl__date">Jul 2023 — Jun 2024</span>
+              </div>
+              <ul class="tl__points">
+                <li>Designed an internal <b>API interceptor</b> to capture and modify traffic between mobile apps and backend servers.</li>
+                <li>Built a generic routing handler and dynamic middleware to fuzz API responses — adopted by <b>15+ scrum teams</b> and <b>50+ QA testers</b>.</li>
+                <li>Shipped a web configuration dashboard for real-time JSON response modification and mock generation.</li>
+              </ul>
+              <div class="tl__tags"><span>Node.js</span><span>Express</span><span>Tooling</span><span>Dev Experience</span></div>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ── PROJECTS ────────────────────────────────── -->
+      <section class="section" id="projects">
+        <div class="section__head reveal">
+          <span class="eyebrow">02 — Selected work</span>
+          <h2>Things I've built</h2>
+          <p>Side projects where I get to pick the architecture.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card card--lg reveal" style="--accent:#7cf6b4">
+            <div class="card__glow"></div>
+            <div class="card__top">
+              <span class="card__emoji">🚆</span>
+              <span class="card__kind">Android · Live</span>
+            </div>
+            <h3>VaCart</h3>
+            <p class="card__tag">Real-Time Train Vacancy Tracker</p>
+            <p class="card__body">Native Android app tracking train seat availability in real time. Jetpack Compose + Material 3 UI, MVVM with Kotlin Flow driving asynchronous data streams and efficient REST polling.</p>
+            <div class="card__tags"><span>Compose</span><span>Kotlin</span><span>Hilt</span><span>Flow</span><span>Coroutines</span><span>Retrofit</span></div>
+          </article>
+
+          <article class="card reveal" style="--accent:#a99cff">
+            <div class="card__glow"></div>
+            <div class="card__top">
+              <span class="card__emoji">🖼️</span>
+              <span class="card__kind">Android</span>
+            </div>
+            <h3>CoWall</h3>
+            <p class="card__tag">Shared Lock Screen Wallpaper</p>
+            <p class="card__body">Real-time lock screen wallpaper syncing between users over Firebase Realtime Database &amp; Storage, on an event-driven architecture with Koin DI.</p>
+            <div class="card__tags"><span>Kotlin</span><span>Koin</span><span>Firebase</span></div>
+          </article>
+
+          <article class="card reveal" style="--accent:#ffb782">
+            <div class="card__glow"></div>
+            <div class="card__top">
+              <span class="card__emoji">🔐</span>
+              <span class="card__kind">Android</span>
+            </div>
+            <h3>Password Manager</h3>
+            <p class="card__tag">High-security local credential vault</p>
+            <p class="card__body">AES-encrypted local storage on Room, wrapped in modern Material 3 design with full dark mode support.</p>
+            <div class="card__tags"><span>Compose</span><span>Room</span><span>AES</span></div>
+          </article>
+
+          <article class="card reveal" style="--accent:#8ad8ff">
+            <div class="card__glow"></div>
+            <div class="card__top">
+              <span class="card__emoji">🔑</span>
+              <span class="card__kind">CLI · Systems</span>
+            </div>
+            <h3>AuthKey CLI</h3>
+            <p class="card__tag">API key generation &amp; rotation</p>
+            <p class="card__body">Secure command-line tool automating auth key generation and rotation, with encrypted local credential storage modelled on Android's Keystore.</p>
+            <div class="card__tags"><span>Go</span><span>Node.js</span><span>OAuth</span></div>
+          </article>
+
+          <article class="card reveal" style="--accent:#ff9ec7">
+            <div class="card__glow"></div>
+            <div class="card__top">
+              <span class="card__emoji">🧩</span>
+              <span class="card__kind">Extension</span>
+            </div>
+            <h3>Mozilla Browser Extension</h3>
+            <p class="card__tag">Intercept &amp; modify network requests</p>
+            <p class="card__body">Lightweight WebExtension using background scripts and message passing for state management — the same background-processing fundamentals Android runs on.</p>
+            <div class="card__tags"><span>JavaScript</span><span>WebExtensions</span><span>DOM</span></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ── STACK ───────────────────────────────────── -->
+      <section class="section" id="stack">
+        <div class="section__head reveal">
+          <span class="eyebrow">03 — Toolkit</span>
+          <h2>The stack I reach for</h2>
+        </div>
+
+        <div class="stackwrap">
+          <div class="stack">
+            <div class="stack__group reveal">
+              <h4><span class="dot" style="--accent:#7cf6b4"></span>Android &amp; Mobile</h4>
+              <div class="pills">
+                <span>Kotlin</span><span>Java</span><span>Jetpack Compose</span><span>Android SDK</span><span>LiveData</span><span>Retrofit</span><span>Room</span><span>Coroutines</span><span>Flow</span><span>Dagger2 / Hilt</span><span>Mockk</span><span>Mockito</span>
+              </div>
+            </div>
+            <div class="stack__group reveal">
+              <h4><span class="dot" style="--accent:#a99cff"></span>Architecture</h4>
+              <div class="pills"><span>MVVM</span><span>Clean Architecture</span><span>SOLID</span><span>Agile / Scrum</span><span>UI/UX</span></div>
+            </div>
+            <div class="stack__group reveal">
+              <h4><span class="dot" style="--accent:#8ad8ff"></span>Backend &amp; Web</h4>
+              <div class="pills"><span>C / C++</span><span>JavaScript</span><span>Node.js</span><span>Express</span><span>RESTful APIs</span><span>Microservices</span></div>
+            </div>
+            <div class="stack__group reveal">
+              <h4><span class="dot" style="--accent:#ffb782"></span>Tools &amp; Data</h4>
+              <div class="pills"><span>Android Studio</span><span>Git</span><span>Postman</span><span>Jenkins</span><span>Jira</span><span>Firebase</span><span>Claude Code</span><span>Gemini</span><span>SQL</span><span>MongoDB</span></div>
+            </div>
+          </div>
+
+          <div class="code reveal">
+            <div class="code__bar">
+              <span class="code__dots"><i></i><i></i><i></i></span>
+              <span class="code__file">Developer.kt</span>
+            </div>
+<pre class="code__body"><code><span class="k">@Composable</span>
+<span class="k">fun</span> <span class="f">Developer</span>(modifier: Modifier = Modifier) {
+    <span class="k">val</span> focus <span class="o">by</span> rememberSaveable {
+        mutableStateOf(<span class="s">"Native Android"</span>)
+    }
+
+    <span class="f">Column</span>(
+        modifier = modifier.fillMaxSize(),
+        verticalArrangement = Arrangement.<span class="f">spacedBy</span>(<span class="n">16</span>.dp)
+    ) {
+        <span class="f">Text</span>(<span class="s">"Chahat Baghele"</span>, style = <span class="t">Display</span>)
+        <span class="f">Text</span>(<span class="s">"Bengaluru, India"</span>)
+
+        skills.<span class="f">forEach</span> { skill <span class="o">-&gt;</span>
+            <span class="f">AssistChip</span>(onClick = ::ship, label = { <span class="f">Text</span>(skill) })
+        }
+    }
+}</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── ABOUT ───────────────────────────────────── -->
+      <section class="section" id="about">
+        <div class="about">
+          <div class="about__main reveal">
+            <span class="eyebrow">04 — About</span>
+            <h2>Mobile engineer who<br />speaks backend.</h2>
+            <p>
+              I'm a Software Engineer specializing in <b>native Android development</b>, with a
+              strong foundation in full-stack enterprise architecture. I've delivered
+              mission-critical financial mobile products serving over <b>100K daily users</b>
+              using Jetpack Compose, Kotlin and MVVM.
+            </p>
+            <p>
+              My time in backend microservices and API design at ServiceNow means I bridge
+              frontend architectures with scalable backend infrastructure — so the
+              mobile-backend seam is designed, not discovered in production.
+            </p>
+            <div class="about__links">
+              <a class="btn btn--tonal" href="mailto:chahatmbaghele@gmail.com">✉ Email</a>
+              <a class="btn btn--tonal" href="tel:+919168282534">☎ +91 91682 82534</a>
+              <a class="btn btn--tonal" href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+              <a class="btn btn--tonal" href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
+              <a class="btn btn--tonal" href="https://leetcode.com/" target="_blank" rel="noopener">LeetCode ↗</a>
+            </div>
+          </div>
+
+          <aside class="about__side">
+            <div class="edu reveal">
+              <h4>Education</h4>
+              <p class="edu__school">Veermata Jijabai Technological Institute</p>
+              <p class="edu__deg">B.Tech, Information Technology</p>
+              <p class="edu__meta">Mumbai, India · Jul 2019 — May 2023</p>
+              <div class="edu__cgpa"><b>8.98</b> / 10.0 CGPA</div>
+            </div>
+            <div class="honors reveal">
+              <h4>Honors</h4>
+              <ul>
+                <li><span>🏆</span>ServiceNow LAMA Award — Q2 2026</li>
+                <li><span>🎨</span>UI/UX Track Winner — HackFrost</li>
+                <li><span>🥈</span>Runner-Up — Centenary Hackathon</li>
+                <li><span>🥈</span>Runner-Up — Quasar Hackathon</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ── CTA ─────────────────────────────────────── -->
+      <section class="cta reveal">
+        <div class="cta__inner">
+          <span class="chip chip--live"><span class="pulse"></span> Available for new work</span>
+          <h2>Got an Android app<br />that deserves better?</h2>
+          <p>Compose migrations, architecture cleanups, or a product from zero — let's get into it.</p>
+          <a class="btn btn--filled btn--xl" href="mailto:chahatmbaghele@gmail.com">
+            chahatmbaghele@gmail.com
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>© <span id="year">2026</span> Chahat Baghele · Bengaluru, India</p>
+        <p>Built with Kotlin-brain energy.</p>
+      </footer>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

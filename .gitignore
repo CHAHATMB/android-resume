@@ -1,0 +1,8 @@
+node_modules
+ .agent-sessions/
+node_modules /n .agent-sessions/
+node_modules \n .agent-sessions/
+node_modules
+.agent-sessions/
+.cursor/rules/railway.mdc
+node_modules/
