@@ -65,7 +65,7 @@
               See the work
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
-            <a class="btn btn--tonal btn--lg" href="/resume.pdf" target="_blank" rel="noopener">
+            <a class="btn btn--tonal btn--lg" href="%BASE_URL%resume.pdf" target="_blank" rel="noopener">
               Download résumé
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0 4-4m-4 4-4-4M5 19h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
@@ -314,7 +314,7 @@
               <a class="btn btn--tonal" href="https://github.com/CHAHATMB" target="_blank" rel="noopener">GitHub ↗</a>
               <a class="btn btn--tonal" href="https://www.linkedin.com/in/chahatmb" target="_blank" rel="noopener">LinkedIn ↗</a>
               <a class="btn btn--tonal" href="https://leetcode.com/u/CHAHATMB/" target="_blank" rel="noopener">LeetCode ↗</a>
-              <a class="btn btn--tonal" href="/resume.pdf" target="_blank" rel="noopener">⤓ Résumé (PDF)</a>
+              <a class="btn btn--tonal" href="%BASE_URL%resume.pdf" target="_blank" rel="noopener">⤓ Résumé (PDF)</a>
             </div>
           </div>
 
@@ -372,6 +372,16 @@
         </button>
 
         <div class="pv">
+          <div class="pv__info">
+            <span class="card__kind" id="pvKind">Android</span>
+            <h3 id="pvTitle">Project</h3>
+            <p class="card__tag" id="pvTagline"></p>
+            <p class="pv__body" id="pvBody"></p>
+            <ul class="pv__features" id="pvFeatures"></ul>
+            <div class="card__tags" id="pvTags"></div>
+            <div class="pv__actions" id="pvActions"></div>
+          </div>
+
           <div class="pv__stage">
             <button class="pv__arrow pv__arrow--prev" id="pvPrev" aria-label="Previous screenshot">
               <svg viewBox="0 0 24 24"><path d="M15 5 8 12l7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -386,6 +396,11 @@
                   <div class="pv__loader" id="pvLoader"></div>
                 </div>
               </div>
+              <p class="pv__swipehint" id="pvSwipeHint">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Swipe or use arrows
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </p>
             </div>
 
             <button class="pv__arrow pv__arrow--next" id="pvNext" aria-label="Next screenshot">
@@ -394,16 +409,6 @@
 
             <div class="pv__caption"><span id="pvCaption"></span></div>
             <div class="pv__dots" id="pvDots"></div>
-          </div>
-
-          <div class="pv__info">
-            <span class="card__kind" id="pvKind">Android</span>
-            <h3 id="pvTitle">Project</h3>
-            <p class="card__tag" id="pvTagline"></p>
-            <p class="pv__body" id="pvBody"></p>
-            <ul class="pv__features" id="pvFeatures"></ul>
-            <div class="card__tags" id="pvTags"></div>
-            <div class="pv__actions" id="pvActions"></div>
           </div>
         </div>
       </div>

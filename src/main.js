@@ -114,15 +114,16 @@ let current = null;
 let index = 0;
 let lastFocus = null;
 
-function show(i) {
+function show(i, dir = 0) {
   if (!current || !current.shots.length) return;
   index = (i + current.shots.length) % current.shots.length;
   const shot = current.shots[index];
   pvLoader.hidden = false;
   pvImg.classList.remove("is-ready");
+  pvImg.style.setProperty("--from", dir > 0 ? "44px" : dir < 0 ? "-44px" : "0px");
   pvImg.src = shot.src;
   pvImg.alt = `${current.name} — ${shot.caption}`;
-  el("pvCaption").textContent = shot.caption;
+  el("pvCaption").textContent = `${shot.caption}  ·  ${index + 1}/${current.shots.length}`;
   [...pvDots.children].forEach((d, k) => d.classList.toggle("is-on", k === index));
 }
 pvImg.addEventListener("load", () => {
@@ -188,15 +189,15 @@ document.addEventListener("click", (e) => {
   if (open) return openPreview(open.dataset.preview);
   if (e.target.closest("[data-close]")) return closePreview();
   const go = e.target.closest("[data-go]");
-  if (go) show(Number(go.dataset.go));
+  if (go) show(Number(go.dataset.go), Number(go.dataset.go) > index ? 1 : -1);
 });
-el("pvPrev").addEventListener("click", () => show(index - 1));
-el("pvNext").addEventListener("click", () => show(index + 1));
+el("pvPrev").addEventListener("click", () => show(index - 1, -1));
+el("pvNext").addEventListener("click", () => show(index + 1, 1));
 addEventListener("keydown", (e) => {
   if (modal.hidden) return;
   if (e.key === "Escape") closePreview();
-  if (e.key === "ArrowRight") show(index + 1);
-  if (e.key === "ArrowLeft") show(index - 1);
+  if (e.key === "ArrowRight") show(index + 1, 1);
+  if (e.key === "ArrowLeft") show(index - 1, -1);
 });
 
 // swipe on the device
@@ -205,7 +206,7 @@ pvDevice.addEventListener("pointerdown", (e) => (startX = e.clientX));
 pvDevice.addEventListener("pointerup", (e) => {
   if (startX === null) return;
   const dx = e.clientX - startX;
-  if (Math.abs(dx) > 40) show(index + (dx < 0 ? 1 : -1));
+  if (Math.abs(dx) > 40) show(index + (dx < 0 ? 1 : -1), dx < 0 ? 1 : -1);
   startX = null;
 });
 

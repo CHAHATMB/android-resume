@@ -6,3 +6,5 @@ node_modules
 .agent-sessions/
 .cursor/rules/railway.mdc
 node_modules/
+dist/
+.playwright-mcp/

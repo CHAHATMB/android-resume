@@ -576,13 +576,13 @@ html[data-theme="light"] .code { background: #11161b; }
 .modal__close:hover { background: var(--surface-3); transform: rotate(90deg); }
 .modal__close svg { width: 18px; height: 18px; }
 
-.pv { display: grid; grid-template-columns: minmax(0, 0.95fr) minmax(0, 1fr); gap: 34px; align-items: center; }
+.pv { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr); gap: 40px; align-items: center; }
 .pv__stage {
   position: relative; display: grid; justify-items: center; gap: 16px; padding: 10px 0;
   border-radius: var(--radius); 
   background: radial-gradient(90% 70% at 50% 40%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 70%);
 }
-.pv__device { cursor: grab; touch-action: pan-y; }
+.pv__device { cursor: grab; touch-action: pan-y; display: flex; flex-direction: column; align-items: center; gap: 12px; }
 .pv__device:active { cursor: grabbing; }
 .pv__frame {
   position: relative; width: 244px; height: 506px; padding: 8px; border-radius: 38px;
@@ -599,9 +599,20 @@ html[data-theme="light"] .code { background: #11161b; }
 }
 .pv__screen img {
   width: 100%; height: 100%; object-fit: cover; object-position: top center;
-  opacity: 0; transition: opacity 0.35s var(--ease);
+  opacity: 0; transform: translateX(var(--from, 0)) scale(0.98);
+  transition: opacity 0.4s var(--ease), transform 0.5s var(--ease);
 }
-.pv__screen img.is-ready { opacity: 1; }
+.pv__screen img.is-ready { opacity: 1; transform: translateX(0) scale(1); }
+.pv__swipehint {
+  display: flex; align-items: center; gap: 8px; margin: 0;
+  font-family: "Google Sans Code", monospace; font-size: 11px; letter-spacing: 0.04em;
+  color: var(--on-muted); opacity: 0.75;
+}
+.pv__swipehint svg { width: 13px; height: 13px; animation: swipenudge 1.8s var(--ease) infinite; }
+.pv__swipehint svg:last-child { animation-delay: 0.9s; }
+@keyframes swipenudge { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
+.pv__device[data-frame="terminal"] .pv__swipehint,
+.modal.is-static .pv__swipehint { display: none; }
 .pv__loader {
   position: absolute; width: 28px; height: 28px; border-radius: 50%;
   border: 2px solid color-mix(in srgb, var(--accent) 35%, transparent); border-top-color: var(--accent);
